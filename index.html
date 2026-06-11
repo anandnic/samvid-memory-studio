@@ -7,7 +7,7 @@
   <meta property="og:title" content="Samvid Memory Studio — Local memory for your AI">
   <meta property="og:description" content="One install. Every AI tool remembers. Runs entirely on your machine.">
   <meta property="og:type" content="website">
-  <title>Samvid Memory Studio — Local memory for your AI</title>
+  <title>Samvid Memory Studio — Give your AI a memory that actually lasts</title>
   <link rel="icon" type="image/png" href="assets/icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,16 +20,21 @@
   <div class="container header-inner">
     <a href="#" class="logo">
       <img src="assets/icon.png" alt="" width="28" height="28">
-      <span class="logo-text">Samvid Memory Studio</span>
+      <span class="logo-text"><span>Samvid</span> Memory Studio</span>
     </a>
     <nav class="nav-links">
-      <a href="#features">Features</a>
-      <a href="#how">How it works</a>
-      <a href="#two-ways">CLI &amp; MCP</a>
-      <a href="#inside">Inside the app</a>
+      <a href="#problem">Shared brain</a>
+      <a href="#types">Memory types</a>
+      <a href="#graph">Knowledge graph</a>
+      <a href="#decay">Decay</a>
+      <a href="#lifecycle">Lifecycle</a>
+      <a href="#tools">Tools</a>
       <a href="#download">Download</a>
     </nav>
     <div class="header-actions">
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
@@ -37,6 +42,16 @@
     </div>
   </div>
 </header>
+
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#problem">Shared brain</a>
+  <a href="#types">Memory types</a>
+  <a href="#graph">Knowledge graph</a>
+  <a href="#decay">Decay</a>
+  <a href="#lifecycle">Lifecycle</a>
+  <a href="#tools">Tools</a>
+  <a href="#download">Download</a>
+</nav>
 
 <main>
 
@@ -48,19 +63,19 @@
     </div>
     <h1 class="hero-title">
       Give your AI a memory<br>
-      <span class="grad">that actually lasts.</span>
+      <span class="hero-line-amber">that actually lasts.</span>
     </h1>
     <p class="hero-sub">
-      Samvid Memory Studio runs on your computer and gives every AI tool you use the same
-      persistent memory. Install once — Claude, Cursor, VS Code, and the rest
-      all share it. Nothing leaves your machine.
+      <span class="hero-sub-lead">AI without memory is a river that forgets its source.</span>
+      <span class="hero-sub-body">Samvid lets every experience leave a trace. Memories accumulate. Connections strengthen. Meaning unfolds. Beneath the surface, semantic recall hums like a subconscious mind, surfacing the right context at the right moment.</span>
+      <span class="hero-sub-close">What begins as conversation becomes understanding.<br>What begins as data becomes memory.</span>
     </p>
     <div class="hero-cta">
       <a href="#download" class="btn btn-primary">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v14m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
         Download for free
       </a>
-      <a href="#inside" class="btn btn-ghost">See the desktop app</a>
+      <a href="#problem" class="btn btn-ghost">See how it works</a>
     </div>
 
     <div class="hero-shot">
@@ -74,7 +89,7 @@
         <div class="app-body">
           <aside class="app-side">
             <div class="app-brand">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a4 4 0 00-4 4v1a3 3 0 00-3 3v.5A2.5 2.5 0 002.5 14 2.5 2.5 0 005 16.5V17a3 3 0 003 3h.5a3 3 0 005 0H14a3 3 0 003-3v-.5A2.5 2.5 0 0019.5 14 2.5 2.5 0 0017 11.5V11a3 3 0 00-3-3V7a4 4 0 00-2-4z"/></svg>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></svg>
               <span>Samvid Memory Studio</span>
             </div>
             <nav class="app-nav">
@@ -298,34 +313,578 @@
   </div>
 </section>
 
-<section class="how" id="how">
-  <div class="container">
-    <div class="section-head">
-      <div class="kicker">How it works</div>
-      <h2>Three steps. No cloud. No setup.</h2>
-      <p>Install the app, point your AI tools at it, and you're done. Samvid Memory Studio runs in the background and stays out of your way.</p>
+<!-- AMNESIA: BEFORE / AFTER -->
+<section class="amnesia">
+  <div class="container amnesia-grid">
+    <div class="am-copy">
+      <div class="kicker">The problem</div>
+      <h2>Every session starts<br>from <span class="grad">zero.</span></h2>
+      <p>You explain the project. The AI agrees. You close the tab. You open a new one tomorrow — and it has no idea who you are, what you're building, or what you decided last week.</p>
+      <p>That loop is the single biggest reason AI feels frustrating in real work. The tool is stateless. The work is not.</p>
+      <p>Samvid gives the AI a real memory. One install and every conversation picks up where the last one left off — across every tool, every agent, forever.</p>
     </div>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">01</div>
-        <h3>Install</h3>
-        <p>Download the installer for your platform. One file, everything bundled. No Python, no Docker, no terminal required.</p>
+    <div class="am-stack">
+      <div class="am-card am-lost">
+        <div class="am-head">
+          <span class="am-dot"></span>
+          <span class="am-name">Session #47 · new conversation</span>
+          <span class="am-tag am-tag-lost">memory wiped</span>
+        </div>
+        <div class="am-body">
+          <div class="am-line"><span class="am-role">you</span><span class="am-msg">What database are we using for the payments service?</span></div>
+          <div class="am-line"><span class="am-role">ai</span><span class="am-msg am-lost-text">I don't have context from previous conversations. Could you remind me of the project details?</span></div>
+          <div class="am-line"><span class="am-role">you</span><span class="am-msg">We decided on Postgres three weeks ago. We've had this conversation four times.</span></div>
+        </div>
       </div>
-      <div class="step">
-        <div class="step-num">02</div>
-        <h3>Connect</h3>
-        <p>Add one line to your AI tool's MCP config. Claude, Cursor, VS Code — they all use the same open standard.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">03</div>
-        <h3>Remember</h3>
-        <p>Your AI now recalls past conversations, decisions, and context. Ask what did we decide about X? — it knows.</p>
+      <div class="am-arrow"><span>install samvid</span></div>
+      <div class="am-card am-kept">
+        <div class="am-head">
+          <span class="am-dot"></span>
+          <span class="am-name">Session #48 · memory intact</span>
+          <span class="am-tag am-tag-kept">1,247 memories loaded</span>
+        </div>
+        <div class="am-body">
+          <div class="am-line"><span class="am-role">you</span><span class="am-msg">What database are we using for the payments service?</span></div>
+          <div class="am-line"><span class="am-role">ai</span><span class="am-msg am-kept-text">Postgres — decided March 14th. You ruled out SQLite for write contention reasons. Migration scripts are in <code>/db/migrations</code>.</span></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="features" id="features">
+<!-- ONE BRAIN, EIGHT AGENTS -->
+<section class="brain" id="problem">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">The core insight</div>
+      <h2>Eight agents.<br><span class="grad">One brain.</span></h2>
+      <p>Today's AI tools are powerful but isolated. Cursor doesn't know what you decided in Claude. Claude doesn't know what Windsurf learned last week. Every tool starts from zero, every session.</p>
+    </div>
+
+    <div class="brain-stage">
+      <div class="brain-row">
+        <div class="brain-agent">Claude<br><span>Desktop</span></div>
+        <div class="brain-agent">Cursor<br><span>IDE</span></div>
+        <div class="brain-agent">VS Code<br><span>IDE</span></div>
+        <div class="brain-agent">Windsurf<br><span>IDE</span></div>
+        <div class="brain-agent">OpenCode<br><span>CLI</span></div>
+        <div class="brain-agent">Codex<br><span>CLI</span></div>
+        <div class="brain-agent">Hermes<br><span>Agent</span></div>
+        <div class="brain-agent brain-agent-plus">+ Any<br><span>MCP client</span></div>
+      </div>
+      <div class="brain-bridge">
+        <div class="brain-bridge-line"></div>
+        <div class="brain-bridge-label">model context protocol · localhost:8258</div>
+        <div class="brain-bridge-line"></div>
+      </div>
+      <div class="brain-core">
+        <div class="brain-core-name">Samvid MCP Server</div>
+        <div class="brain-core-sub">20 tools · vector + keyword search · real-time</div>
+      </div>
+      <div class="brain-db">
+        <div class="brain-db-icn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v6c0 1.7 4 3 9 3s9-1.3 9-3V5M3 11v6c0 1.7 4 3 9 3s9-1.3 9-3v-6"/></svg>
+        </div>
+        <div>
+          <div class="brain-db-name">samvid.db</div>
+          <div class="brain-db-sub">single SQLite file on your disk · no sync, no conflicts</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 16 MEMORY TYPES -->
+<section class="types" id="types">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Memory taxonomy</div>
+      <h2>16 ways to <span class="grad">remember.</span></h2>
+      <p>A rule isn't a preference. A goal isn't a plan. Each memory gets the shape it deserves.</p>
+    </div>
+
+    <div class="types-grid">
+      <div class="type-tile">
+        <span class="type-chip type-cyan">fact</span>
+        <div class="type-desc">Verifiable, stable information</div>
+      </div>
+      <div class="type-tile">
+        <span class="type-chip type-violet">preference</span>
+        <div class="type-desc">User or agent preferences</div>
+      </div>
+      <div class="type-tile">
+        <span class="type-chip type-amber">rule</span>
+        <div class="type-desc">Hard constraint — always followed</div>
+      </div>
+      <div class="type-tile">
+        <span class="type-chip type-amber-dim">heuristic</span>
+        <div class="type-desc">Soft guidelines from experience</div>
+      </div>
+      <div class="type-tile">
+        <span class="type-chip type-rose">goal</span>
+        <div class="type-desc">Active objective being pursued</div>
+      </div>
+      <div class="type-tile">
+        <span class="type-chip type-green">plan</span>
+        <div class="type-desc">Concrete steps toward a goal</div>
+      </div>
+      <div class="type-tile">
+        <span class="type-chip type-slate">event</span>
+        <div class="type-desc">A time-bound occurrence</div>
+      </div>
+      <div class="type-tile">
+        <span class="type-chip type-cyan-dim">summary</span>
+        <div class="type-desc">Compressed form of many memories</div>
+      </div>
+      <div class="type-tile type-tile-more">
+        <span class="type-chip-more">+8</span>
+        <div class="type-desc">procedure, feedback, critique, context, entity, concept, general, summarized</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWLEDGE GRAPH -->
+<section class="graph" id="graph">
+  <div class="container graph-grid">
+    <div class="graph-copy">
+      <div class="kicker">Typed associations</div>
+      <h2>A knowledge graph,<br>not a <span class="grad">list of facts.</span></h2>
+      <p class="graph-lead">Memories link to each other with typed relationships and a strength score. The graph grows as agents reason — supporting, contradicting, superseding, and tracing causes between every fact they store.</p>
+
+      <div class="assoc-list">
+        <div class="assoc-item">
+          <span class="assoc-rel rel-supports">supports</span>
+          <div class="assoc-body"><strong>Corroborates</strong> another memory. Reinforces confidence during reasoning.</div>
+        </div>
+        <div class="assoc-item">
+          <span class="assoc-rel rel-contradicts">contradicts</span>
+          <div class="assoc-body"><strong>Flags a conflict.</strong> Agent surfaces the tension before acting on either.</div>
+        </div>
+        <div class="assoc-item">
+          <span class="assoc-rel rel-supersedes">supersedes</span>
+          <div class="assoc-body">A newer decision <strong>replaces</strong> an older one. The graph stays current.</div>
+        </div>
+        <div class="assoc-item">
+          <span class="assoc-rel rel-caused">caused_by</span>
+          <div class="assoc-body">Links outcomes to their <strong>causes.</strong> Enables root-cause recall.</div>
+        </div>
+        <div class="assoc-item">
+          <span class="assoc-rel rel-implies">implies</span>
+          <div class="assoc-body">Logical entailment. Also: <code>prevents</code>, <code>blocks</code>, <code>is_a</code>, <code>part_of</code>, <code>instance_of</code>.</div>
+        </div>
+      </div>
+      <div class="graph-note">Each association carries a <strong>strength score (0.0–1.0)</strong> — confidence evolves as the graph grows.</div>
+    </div>
+
+    <div class="graph-card">
+      <div class="graph-card-head">
+        <div>
+          <div class="graph-card-title">project:lumber · live graph</div>
+          <div class="graph-card-sub">6 memories · 5 associations</div>
+        </div>
+        <div class="graph-legend">
+          <span class="lg-dot dot-fact">fact</span>
+          <span class="lg-dot dot-rule">rule</span>
+          <span class="lg-dot dot-pref">pref</span>
+          <span class="lg-dot dot-event">event</span>
+          <span class="lg-dot dot-goal">goal</span>
+        </div>
+      </div>
+
+      <div class="graph-canvas">
+        <svg class="graph-svg" viewBox="0 0 720 480" preserveAspectRatio="xMidYMid meet" aria-label="Knowledge graph of related memories">
+          <defs>
+            <marker id="arr-supports" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="rgba(16,185,129,.85)"/>
+            </marker>
+            <marker id="arr-contradicts" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="rgba(244,63,94,.85)"/>
+            </marker>
+            <marker id="arr-supersedes" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="rgba(245,158,11,.9)"/>
+            </marker>
+            <marker id="arr-caused" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="rgba(139,92,246,.9)"/>
+            </marker>
+            <marker id="arr-implies" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="rgba(34,211,238,.85)"/>
+            </marker>
+          </defs>
+
+          <!-- EDGES (drawn first so nodes sit on top) -->
+          <!-- Postgres (380,260) supersedes SQLite (130,260) -->
+          <path d="M 320 252 Q 255 232 185 252" fill="none" stroke="rgba(245,158,11,.9)" stroke-width="1.6" marker-end="url(#arr-supersedes)"/>
+          <g class="g-edge-label" transform="translate(252,280)"><rect x="-52" y="-12" width="104" height="22" rx="11"/><text x="0" y="3">supersedes · 0.95</text></g>
+
+          <!-- Postgres (380,260) supports DB-decision (130,100) -->
+          <!-- Curve hugs the top: control point pulled up so the path passes high. Label sits ABOVE the curve near the top-left. -->
+          <path d="M 350 240 Q 240 130 190 108" fill="none" stroke="rgba(16,185,129,.85)" stroke-width="1.6" marker-end="url(#arr-supports)"/>
+          <g class="g-edge-label" transform="translate(230,168)"><rect x="-48" y="-12" width="96" height="22" rx="11"/><text x="0" y="3">supports · 0.88</text></g>
+
+          <!-- Postgres (380,260) caused_by Prefer managed DBs (140,420) -->
+          <path d="M 360 280 Q 270 360 195 412" fill="none" stroke="rgba(139,92,246,.9)" stroke-width="1.6" marker-end="url(#arr-caused)"/>
+          <g class="g-edge-label" transform="translate(270,372)"><rect x="-52" y="-12" width="104" height="22" rx="11"/><text x="0" y="3">caused_by · 0.81</text></g>
+
+          <!-- Postgres (380,260) implies Zero-downtime (600,420) -->
+          <path d="M 410 280 Q 480 360 555 412" fill="none" stroke="rgba(34,211,238,.85)" stroke-width="1.6" marker-end="url(#arr-implies)"/>
+          <g class="g-edge-label" transform="translate(490,372)"><rect x="-44" y="-12" width="88" height="22" rx="11"/><text x="0" y="3">implies · 0.73</text></g>
+
+          <!-- Rule No SQLite (590,110) contradicts SQLite (130,260) -->
+          <!-- Gentler curve: control point at y=140 keeps the path well above the Postgres node without an extreme arch. -->
+          <path d="M 522 128 Q 360 140 185 248" fill="none" stroke="rgba(244,63,94,.85)" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arr-contradicts)"/>
+          <g class="g-edge-label" transform="translate(430,135)"><rect x="-56" y="-12" width="112" height="22" rx="11"/><text x="0" y="3">contradicts · 1.00</text></g>
+
+          <!-- NODES -->
+          <!-- SQLite fact (target of supersedes + contradicts) -->
+          <g class="g-svg-node" transform="translate(130,260)">
+            <rect class="g-nbg nbg-fact" x="-55" y="-18" width="110" height="36" rx="8"/>
+            <text class="g-ntype ntype-fact" x="0" y="-4">fact</text>
+            <text class="g-ntxt" x="0" y="12">Use SQLite</text>
+          </g>
+          <!-- Postgres fact (central hub) -->
+          <g class="g-svg-node" transform="translate(380,260)">
+            <rect class="g-nbg nbg-fact" x="-60" y="-18" width="120" height="36" rx="8"/>
+            <text class="g-ntype ntype-fact" x="0" y="-4">fact</text>
+            <text class="g-ntxt" x="0" y="12">Use Postgres</text>
+          </g>
+          <!-- Rule no SQLite in prod -->
+          <g class="g-svg-node" transform="translate(590,110)">
+            <rect class="g-nbg nbg-rule" x="-68" y="-18" width="136" height="36" rx="8"/>
+            <text class="g-ntype ntype-rule" x="0" y="-4">rule</text>
+            <text class="g-ntxt" x="0" y="12">No SQLite in prod</text>
+          </g>
+          <!-- Event DB decision -->
+          <g class="g-svg-node" transform="translate(130,100)">
+            <rect class="g-nbg nbg-event" x="-64" y="-18" width="128" height="36" rx="8"/>
+            <text class="g-ntype ntype-event" x="0" y="-4">event</text>
+            <text class="g-ntxt" x="0" y="12">DB choice · Mar 14</text>
+          </g>
+          <!-- Preference managed DB -->
+          <g class="g-svg-node" transform="translate(140,420)">
+            <rect class="g-nbg nbg-pref" x="-72" y="-18" width="144" height="36" rx="8"/>
+            <text class="g-ntype ntype-pref" x="0" y="-4">preference</text>
+            <text class="g-ntxt" x="0" y="12">Prefer managed DBs</text>
+          </g>
+          <!-- Goal zero-downtime -->
+          <g class="g-svg-node" transform="translate(600,420)">
+            <rect class="g-nbg nbg-goal" x="-68" y="-18" width="136" height="36" rx="8"/>
+            <text class="g-ntype ntype-goal" x="0" y="-4">goal</text>
+            <text class="g-ntxt" x="0" y="12">Zero-downtime deploys</text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="graph-card-foot">
+        <span><span class="foot-dot" style="background:rgba(16,185,129,.85)"></span>supports</span>
+        <span><span class="foot-dot" style="background:rgba(244,63,94,.85)"></span>contradicts</span>
+        <span><span class="foot-dot" style="background:rgba(245,158,11,.9)"></span>supersedes</span>
+        <span><span class="foot-dot" style="background:rgba(139,92,246,.9)"></span>caused_by</span>
+        <span><span class="foot-dot" style="background:rgba(34,211,238,.85)"></span>implies</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DECAY -->
+<section class="decay-section" id="decay">
+  <div class="container decay-grid">
+    <div class="decay-copy">
+      <div class="kicker">Memory decay</div>
+      <h2>Memories fade.<br><span class="grad">Important ones don't.</span></h2>
+      <p>Every memory carries an importance score (0–1) and a decay rate. Effective importance fades exponentially over time — just like biological memory. Old, untouched knowledge naturally fades. Frequently accessed, high-importance memories persist.</p>
+      <p>This keeps the knowledge base from becoming a graveyard of irrelevant notes. The <strong>forget</strong> operation prunes memories whose effective importance has dropped below a threshold — but anything with importance ≥ 0.9 is always protected.</p>
+      <p>You set the decay rate per memory — or let the system default. TTL is also available for memories you explicitly want to expire: <em>"remember this for one week"</em>.</p>
+    </div>
+
+    <div class="decay-card">
+      <div class="decay-card-head">
+        <span>effective importance at varying ages</span>
+        <span class="decay-card-meta">mock</span>
+      </div>
+      <div class="decay-nodes">
+        <div class="d-node" style="left:16px;top:20px;">
+          <div class="d-bubble d-bubble-amber-90">0.90</div>
+          <div class="d-age">1 day</div>
+          <div class="d-content">Use Postgres for payments</div>
+        </div>
+        <div class="d-node" style="left:108px;top:32px;">
+          <div class="d-bubble d-bubble-amber-68">0.68</div>
+          <div class="d-age">2 weeks</div>
+          <div class="d-content">Auth refactor notes</div>
+        </div>
+        <div class="d-node" style="left:198px;top:46px;">
+          <div class="d-bubble d-bubble-amber-41">0.41</div>
+          <div class="d-age">6 weeks</div>
+          <div class="d-content">Old API notes</div>
+        </div>
+        <div class="d-node" style="left:286px;top:60px;">
+          <div class="d-bubble d-bubble-amber-18">0.18</div>
+          <div class="d-age">4 months</div>
+          <div class="d-content">Old meeting</div>
+        </div>
+
+        <div class="decay-protect-line"></div>
+        <div class="decay-protect-label">imp ≥ 0.9 — always protected</div>
+
+        <div class="d-node d-node-pin" style="right:14px;top:118px;">
+          <div class="d-bubble d-bubble-green-95">0.95</div>
+          <div class="d-age">8 months</div>
+          <div class="d-content">Core arch decision</div>
+        </div>
+      </div>
+      <div class="decay-formula">
+        <span class="decay-fml-key">effective</span> = importance × exp(<span class="decay-fml-var">−decay_rate × age_days</span>)
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIFECYCLE -->
+<section class="lifecycle" id="lifecycle">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Lifecycle management</div>
+      <h2>A knowledge base that<br><span class="grad">cleans itself.</span></h2>
+      <p>Four operations keep your memory store lean, consistent, and useful as it grows. Run them manually, on a schedule, or let an agent trigger them automatically — all support dry-run preview before committing.</p>
+    </div>
+
+    <div class="lc-grid">
+      <div class="lc-card">
+        <div class="lc-op"><span class="lc-icn lc-icn-rose">⌬</span><span>forget</span></div>
+        <h3>Prune stale memories</h3>
+        <p>Deletes memories whose effective importance (base importance × decay) has dropped below a configurable threshold. Anything with importance ≥ 0.9 is always preserved, regardless of age.</p>
+        <code class="lc-cmd">samvid forget --threshold 0.1</code>
+      </div>
+      <div class="lc-card">
+        <div class="lc-op"><span class="lc-icn lc-icn-cyan">⤓</span><span>compact</span></div>
+        <h3>Reclaim disk space</h3>
+        <p>Removes all memories whose TTL has expired, then runs SQLite VACUUM to physically reclaim disk space. Fast and safe — no vector recomputation needed.</p>
+        <code class="lc-cmd">samvid compact</code>
+      </div>
+      <div class="lc-card">
+        <div class="lc-op"><span class="lc-icn lc-icn-violet">↬</span><span>consolidate</span></div>
+        <h3>Merge near-duplicates</h3>
+        <p>Finds semantically similar memories (cosine distance below a threshold) and merges them into one. The older memory absorbs the newer; the higher importance wins. Supports <strong>dry-run</strong> so you preview every merge before it happens.</p>
+        <code class="lc-cmd">samvid consolidate --dry-run</code>
+      </div>
+      <div class="lc-card">
+        <div class="lc-op"><span class="lc-icn lc-icn-green">∑</span><span>summarize</span></div>
+        <h3>Compress memory batches</h3>
+        <p>When a namespace accumulates many raw memories, batch them for LLM summarization. The summary is stored as a new memory, and the source memories' importance is automatically downgraded — keeping the store concise.</p>
+        <code class="lc-cmd">samvid summarize-prep --namespace work</code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EPISODIC SESSIONS -->
+<section class="episode" id="episode">
+  <div class="container episode-grid">
+    <div class="ep-copy">
+      <div class="kicker">Episodic sessions</div>
+      <h2>Conversations you can<br><span class="grad">replay.</span></h2>
+      <p>Related memories are grouped into <strong>sessions</strong> — an episode, a conversation, a project arc. Each memory in a session links to the previous one via <code>previous_memory_id</code>, forming a traversable chain.</p>
+      <p>The <strong>replay_session</strong> tool reconstructs the entire session as a formatted chronological transcript — ready to inject directly into an LLM context window. The agent re-reads exactly what happened, in order.</p>
+      <p>Long content is auto-chunked at sentence boundaries and chained automatically — so even a 50-page document becomes a replayable episodic chain, not a single massive blob.</p>
+    </div>
+
+    <div class="ep-stage">
+      <div class="ep-card">
+        <div class="ep-head">
+          <span class="ep-dot"></span>
+          <span class="ep-name">session_id: ses_7f3a9b · auth-refactor-2024-03-14</span>
+        </div>
+        <div class="ep-body">
+          <div class="ep-mem">
+            <span class="ep-time">14:02</span>
+            <div>
+              <div class="ep-text">Started auth refactor. Goal: move from session cookies to JWT.</div>
+              <div class="ep-chain">chain: start <em>→</em> mem_001</div>
+            </div>
+          </div>
+          <div class="ep-mem">
+            <span class="ep-time">14:18</span>
+            <div>
+              <div class="ep-text">Ruled out session cookies — write contention with horizontal scale.</div>
+              <div class="ep-chain">chain: mem_001 <em>→</em> mem_002</div>
+            </div>
+          </div>
+          <div class="ep-mem">
+            <span class="ep-time">15:44</span>
+            <div>
+              <div class="ep-text">Decision: JWT with refresh tokens in httpOnly cookies. Rotate keys every 30 days.</div>
+              <div class="ep-chain">chain: mem_002 <em>→</em> mem_003</div>
+            </div>
+          </div>
+          <div class="ep-mem">
+            <span class="ep-time">16:01</span>
+            <div>
+              <div class="ep-text">Migration scripts committed to <code>/db/migrations</code>. Auth refactor complete.</div>
+              <div class="ep-chain">chain: mem_003 <em>→</em> end</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ep-replay">
+        <div class="ep-replay-line"><span class="ep-replay-key">replay_session</span>(<span class="ep-replay-str">"ses_7f3a9b"</span>)</div>
+        <div class="ep-replay-out">→ 4 memories · formatted transcript · ready for LLM context injection</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THREE INTERFACES + 20 TOOLS -->
+<section class="interfaces" id="tools">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">One store, three interfaces</div>
+      <h2>20 tools.<br>Three ways to <span class="grad">use them.</span></h2>
+      <p>Samvid speaks MCP for AI agents, ships a full CLI for scripts, and includes a polished desktop app for humans. One database. Three surfaces. Same memory everywhere.</p>
+    </div>
+
+    <!-- three interfaces illustration -->
+    <div class="if-illustration">
+      <img src="assets/mcp-cli-diagram.png" alt="Three interfaces — MCP Server, CLI, and Desktop App — connected to a central memory store" class="if-diagram">
+    </div>
+
+    <!-- three interface cards -->
+    <div class="if-cards">
+      <div class="if-card if-card-mcp">
+        <div class="if-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="2"/><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg>
+        </div>
+        <h3>MCP Server</h3>
+        <p>20 tools over the Model Context Protocol. Any agent connects. <code>localhost:8258</code></p>
+        <div class="if-card-code">
+          <pre><code><span class="c-p">{</span>
+  <span class="c-k">"mcpServers"</span>: <span class="c-p">{</span>
+    <span class="c-k">"samvid"</span>: <span class="c-p">{</span>
+      <span class="c-k">"type"</span>: <span class="c-s">"http"</span>,
+      <span class="c-k">"url"</span>: <span class="c-s">"http://127.0.0.1:8258/mcp"</span>
+    <span class="c-p">}</span>
+  <span class="c-p">}</span>
+<span class="c-p">}</span></code></pre>
+        </div>
+      </div>
+
+      <div class="if-card if-card-cli">
+        <div class="if-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="4,17 10,11 4,5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+        </div>
+        <h3>Command Line</h3>
+        <p>18 subcommands, JSON output. Script in any shell.</p>
+        <div class="if-card-code">
+          <pre><code><span class="c-c"># search semantically</span>
+<span class="c-p">$</span> samvid search <span class="c-s">"code style"</span>
+
+<span class="c-c"># export to JSON</span>
+<span class="c-p">$</span> samvid export backup.json
+
+<span class="c-c"># consolidate duplicates</span>
+<span class="c-p">$</span> samvid consolidate --dry-run</code></pre>
+        </div>
+      </div>
+
+      <div class="if-card if-card-desk">
+        <div class="if-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>Desktop App</h3>
+        <p>8-page cross-platform GUI. Dashboard, Memories, Sessions, Lifecycle, and more.</p>
+        <ul class="if-card-list">
+          <li>Dark &amp; light themes</li>
+          <li>System tray, auto-launch</li>
+          <li>Toast notifications</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- tool groups -->
+    <div class="if-tools-label">All 20 MCP tools</div>
+    <div class="if-tools">
+      <div class="tool-group">
+        <div class="tool-group-label">Memory CRUD · 6 tools</div>
+        <div class="tool-pills">
+          <span class="tp">add_memory</span><span class="tp">add_memories</span><span class="tp">get_memory</span>
+          <span class="tp">update_memory</span><span class="tp">delete_memory</span><span class="tp">list_memories</span>
+        </div>
+      </div>
+      <div class="tool-group">
+        <div class="tool-group-label">Search &amp; context · 3 tools</div>
+        <div class="tool-pills">
+          <span class="tp">search_memories</span><span class="tp">hybrid_search</span><span class="tp">get_context</span>
+        </div>
+      </div>
+      <div class="tool-group">
+        <div class="tool-group-label">Associations · 2 tools</div>
+        <div class="tool-pills">
+          <span class="tp">create_association</span><span class="tp">get_associations</span>
+        </div>
+      </div>
+      <div class="tool-group">
+        <div class="tool-group-label">Lifecycle · 6 tools</div>
+        <div class="tool-pills">
+          <span class="tp">forget</span><span class="tp">compact</span><span class="tp">consolidate</span>
+          <span class="tp">prepare_summarization</span><span class="tp">store_summary</span><span class="tp">replay_session</span>
+        </div>
+      </div>
+      <div class="tool-group">
+        <div class="tool-group-label">Import · export · stats · 3 tools</div>
+        <div class="tool-pills">
+          <span class="tp">export_memories</span><span class="tp">import_memories</span><span class="tp">get_stats</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSIDE APP -->
+<section class="inside">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Inside the desktop app</div>
+      <h2>Everything you need, <span class="grad">nothing in the way</span></h2>
+      <p>The app lives in your system tray and starts with your computer. Open it when you want to see what your AI knows — otherwise, it just works.</p>
+    </div>
+
+    <div class="inside-grid">
+      <div class="ic">
+        <div class="ic-num">01</div>
+        <h4>Dashboard</h4>
+        <p>Memory counts, session activity, namespace breakdown, database size — at a glance.</p>
+      </div>
+      <div class="ic">
+        <div class="ic-num">02</div>
+        <h4>Memories</h4>
+        <p>Browse, search, edit, and delete every memory. Filter by type, namespace, or importance.</p>
+      </div>
+      <div class="ic">
+        <div class="ic-num">03</div>
+        <h4>Sessions</h4>
+        <p>Replay an entire conversation as a single timeline. Walk through it chronologically.</p>
+      </div>
+      <div class="ic">
+        <div class="ic-num">04</div>
+        <h4>Lifecycle</h4>
+        <p>Consolidate duplicates, forget stale ones, compact the database. All with dry-run previews.</p>
+      </div>
+      <div class="ic">
+        <div class="ic-num">05</div>
+        <h4>Namespaces</h4>
+        <p>Keep work, personal, and side projects separate. Memories stay organized by topic.</p>
+      </div>
+      <div class="ic">
+        <div class="ic-num">06</div>
+        <h4>Export</h4>
+        <p>Move memories between machines. JSON in, JSON out. Your data travels with you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES: semantic search, types, privacy (kept) -->
+<section class="features">
   <div class="container">
 
     <div class="section-head">
@@ -336,8 +895,8 @@
     <div class="feat">
       <div class="feat-copy">
         <div class="feat-tag">Semantic search</div>
-        <h3>Find things by meaning, not keywords.</h3>
-        <p>Ask what was the bug from last Tuesday? and Samvid Memory Studio finds it. The search understands intent, not just text matches.</p>
+        <h3>Find things by <span class="grad">meaning,</span> not keywords.</h3>
+        <p>Ask <em>what was the bug from last Tuesday?</em> and Samvid Memory Studio finds it. The search understands intent, not just text matches.</p>
         <ul class="bullets">
           <li>Vector + keyword hybrid ranking</li>
           <li>Auto-graded relevance scores</li>
@@ -347,34 +906,67 @@
       <div class="feat-visual">
         <div class="mock search-mock">
           <div class="search-bar">
-            <span class="s-ico">⌕</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
             <span class="s-text">what did we decide about the auth flow?</span>
-            <span class="kbd">⏎</span>
+            <span class="s-mode">semantic</span>
           </div>
-          <div class="search-meta">12 results · 0.08s</div>
-          <div class="result">
-            <div class="r-head">
-              <span class="r-tag tag-blue">fact</span>
-              <span class="r-score">98%</span>
+          <div class="search-meta">3 results · semantic</div>
+          <div class="sr-card">
+            <p class="sr-content">Use JWT with refresh tokens stored in httpOnly cookies. Rotate keys every 30 days.</p>
+            <div class="sr-badges">
+              <span class="sr-badge sr-badge-green">Fact</span>
+              <span class="sr-badge sr-badge-gray">project</span>
             </div>
-            <div class="r-title">Use JWT with refresh tokens stored in httpOnly cookies</div>
-            <div class="r-snip">…settled on JWT with refresh tokens stored in httpOnly cookies for the auth flow. Rotate keys every 30 days…</div>
+            <div class="sr-bars">
+              <div class="sr-bar">
+                <span class="sr-bar-label">Imp</span>
+                <div class="sr-bar-track"><div class="sr-bar-fill sr-fill-high" style="width:85%"></div></div>
+                <span class="sr-bar-val">0.85</span>
+              </div>
+              <div class="sr-bar">
+                <span class="sr-bar-label">Score</span>
+                <div class="sr-bar-track"><div class="sr-bar-fill sr-fill-score" style="width:98%"></div></div>
+                <span class="sr-bar-val">0.985</span>
+              </div>
+            </div>
           </div>
-          <div class="result">
-            <div class="r-head">
-              <span class="r-tag tag-purple">event</span>
-              <span class="r-score">91%</span>
+          <div class="sr-card">
+            <p class="sr-content">Auth refactor session — Mar 14. Walked through tradeoffs, decided against session cookies for the public API.</p>
+            <div class="sr-badges">
+              <span class="sr-badge sr-badge-orange">Event</span>
+              <span class="sr-badge sr-badge-gray">project</span>
             </div>
-            <div class="r-title">Auth refactor session — Mar 14</div>
-            <div class="r-snip">…walked through the auth flow tradeoffs, decided against session cookies for the public API…</div>
+            <div class="sr-bars">
+              <div class="sr-bar">
+                <span class="sr-bar-label">Imp</span>
+                <div class="sr-bar-track"><div class="sr-bar-fill sr-fill-mid" style="width:62%"></div></div>
+                <span class="sr-bar-val">0.62</span>
+              </div>
+              <div class="sr-bar">
+                <span class="sr-bar-label">Score</span>
+                <div class="sr-bar-track"><div class="sr-bar-fill sr-fill-score" style="width:91%"></div></div>
+                <span class="sr-bar-val">0.914</span>
+              </div>
+            </div>
           </div>
-          <div class="result">
-            <div class="r-head">
-              <span class="r-tag tag-green">preference</span>
-              <span class="r-score">76%</span>
+          <div class="sr-card">
+            <p class="sr-content">Strong preference for short-lived access tokens, longer-lived refresh tokens.</p>
+            <div class="sr-badges">
+              <span class="sr-badge sr-badge-blue">Preference</span>
+              <span class="sr-badge sr-badge-gray">project</span>
             </div>
-            <div class="r-title">Prefer short-lived tokens over server sessions</div>
-            <div class="r-snip">…strong preference for short-lived access tokens, longer-lived refresh tokens…</div>
+            <div class="sr-bars">
+              <div class="sr-bar">
+                <span class="sr-bar-label">Imp</span>
+                <div class="sr-bar-track"><div class="sr-bar-fill sr-fill-low" style="width:38%"></div></div>
+                <span class="sr-bar-val">0.38</span>
+              </div>
+              <div class="sr-bar">
+                <span class="sr-bar-label">Score</span>
+                <div class="sr-bar-track"><div class="sr-bar-fill sr-fill-score" style="width:76%"></div></div>
+                <span class="sr-bar-val">0.762</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -382,57 +974,8 @@
 
     <div class="feat reverse">
       <div class="feat-copy">
-        <div class="feat-tag">Memory types</div>
-        <h3>Know the difference between a fact and a feeling.</h3>
-        <p>Samvid Memory Studio understands the kind of memory it's storing. Facts, preferences, events, procedures, summaries — each one behaves the way you'd expect.</p>
-        <ul class="bullets">
-          <li>7 memory types — fact, event, preference, procedure, context, general, summary</li>
-          <li>Typed relationships between memories</li>
-          <li>Decay, TTL, and consolidation built in</li>
-        </ul>
-      </div>
-      <div class="feat-visual">
-        <div class="mock mem-mock">
-          <div class="mem-card">
-            <div class="mem-head">
-              <span class="mem-type type-blue">fact</span>
-              <span class="mem-imp">imp 0.92</span>
-            </div>
-            <div class="mem-body">User's primary project is a Rust-based log processor called lumber.</div>
-            <div class="mem-foot"><span>project:lumber</span><span>·</span><span>2 days ago</span></div>
-          </div>
-          <div class="mem-card">
-            <div class="mem-head">
-              <span class="mem-type type-purple">event</span>
-              <span class="mem-imp">imp 0.74</span>
-            </div>
-            <div class="mem-body">Refactor of the parser module — split into lexer and AST builder.</div>
-            <div class="mem-foot"><span>project:lumber</span><span>·</span><span>1 hr ago</span></div>
-          </div>
-          <div class="mem-card">
-            <div class="mem-head">
-              <span class="mem-type type-green">preference</span>
-              <span class="mem-imp">imp 0.88</span>
-            </div>
-            <div class="mem-body">User wants error messages to include the failing line and column.</div>
-            <div class="mem-foot"><span>project:lumber</span><span>·</span><span>3 hr ago</span></div>
-          </div>
-          <div class="mem-card">
-            <div class="mem-head">
-              <span class="mem-type type-amber">procedure</span>
-              <span class="mem-imp">imp 0.65</span>
-            </div>
-            <div class="mem-body">Build steps: cargo build --release, then run ./target/release/lumber.</div>
-            <div class="mem-foot"><span>project:lumber</span><span>·</span><span>1 week ago</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="feat">
-      <div class="feat-copy">
         <div class="feat-tag">Lives on your machine</div>
-        <h3>Your data. Your device. Your call.</h3>
+        <h3>Your data. Your device. <span class="grad">Your call.</span></h3>
         <p>Samvid Memory Studio stores everything in a local SQLite file. No accounts, no telemetry, no cloud sync. The app runs in the background and stays out of your way.</p>
         <ul class="bullets">
           <li>Single-file database, easy to back up</li>
@@ -478,130 +1021,11 @@
   </div>
 </section>
 
-<section class="two-ways" id="two-ways">
-  <div class="container">
-    <div class="section-head">
-      <div class="kicker">Two ways to use it</div>
-      <h2>For agents and for humans</h2>
-      <p>Samvid Memory Studio speaks the open Model Context Protocol, so any AI tool can plug in. And for humans, there's a full command line and a desktop app.</p>
-    </div>
-
-    <div class="ways">
-      <div class="way">
-        <div class="way-head">
-          <div class="way-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg>
-          </div>
-          <div>
-            <h3>MCP server</h3>
-            <p class="way-sub">For AI agents and IDEs</p>
-          </div>
-        </div>
-        <p class="way-desc">Samvid Memory Studio exposes 20 tools over the Model Context Protocol. Any MCP-compatible AI can add, search, and manage memories — Claude Desktop,Claude code, Cursor, VS Code, OpenCode, Codex, and more.</p>
-        <div class="code-block">
-          <div class="code-head">
-            <span>mcp_config.json</span>
-            <span class="code-tag">paste this</span>
-          </div>
-          <pre><code><span class="c-p">{</span>
-  <span class="c-k">"mcpServers"</span>: <span class="c-p">{</span>
-    <span class="c-k">"samvid"</span>: <span class="c-p">{</span>
-      <span class="c-k">"command"</span>: <span class="c-s">"samvid-mcp"</span><span class="c-p">,</span>
-      <span class="c-k">"args"</span>: <span class="c-p">[]</span>
-    <span class="c-p">}</span>
-  <span class="c-p">}</span>
-<span class="c-p">}</span></code></pre>
-        </div>
-        <ul class="bullets tight">
-          <li>20 ready-to-use tools</li>
-          <li>Works with any MCP client</li>
-          <li>Zero code on your side</li>
-        </ul>
-      </div>
-
-      <div class="way">
-        <div class="way-head">
-          <div class="way-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
-          </div>
-          <div>
-            <h3>Command line</h3>
-            <p class="way-sub">For humans and scripts</p>
-          </div>
-        </div>
-        <p class="way-desc">A full CLI for direct memory management. Search, organize, export, and script your memory workflows. JSON output on every command — pipe it into anything.</p>
-        <div class="code-block">
-          <div class="code-head">
-            <span>terminal</span>
-            <span class="code-tag">try it</span>
-          </div>
-          <pre><code><span class="c-c"># add a memory</span>
-<span class="c-p">$</span> samvid add <span class="c-s">"use tabs, not spaces"</span>
-
-<span class="c-c"># search by meaning</span>
-<span class="c-p">$</span> samvid search <span class="c-s">"code style preferences"</span>
-
-<span class="c-c"># export everything</span>
-<span class="c-p">$</span> samvid export backup.json</code></pre>
-        </div>
-        <ul class="bullets tight">
-          <li>18 subcommands, JSON output</li>
-          <li>Scriptable in any shell</li>
-          <li>Same engine as the desktop app</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="inside" id="inside">
-  <div class="container">
-    <div class="section-head">
-      <div class="kicker">Inside the desktop app</div>
-      <h2>Everything you need, nothing in the way</h2>
-      <p>The app lives in your system tray and starts with your computer. Open it when you want to see what your AI knows — otherwise, it just works.</p>
-    </div>
-
-    <div class="inside-grid">
-      <div class="ic">
-        <div class="ic-num">01</div>
-        <h4>Dashboard</h4>
-        <p>Memory counts, session activity, namespace breakdown, database size — at a glance.</p>
-      </div>
-      <div class="ic">
-        <div class="ic-num">02</div>
-        <h4>Memories</h4>
-        <p>Browse, search, edit, and delete every memory. Filter by type, namespace, or importance.</p>
-      </div>
-      <div class="ic">
-        <div class="ic-num">03</div>
-        <h4>Sessions</h4>
-        <p>Replay an entire conversation as a single timeline. Walk through it chronologically.</p>
-      </div>
-      <div class="ic">
-        <div class="ic-num">04</div>
-        <h4>Lifecycle</h4>
-        <p>Consolidate duplicates, forget stale ones, compact the database. All with dry-run previews.</p>
-      </div>
-      <div class="ic">
-        <div class="ic-num">05</div>
-        <h4>Namespaces</h4>
-        <p>Keep work, personal, and side projects separate. Memories stay organized by topic.</p>
-      </div>
-      <div class="ic">
-        <div class="ic-num">06</div>
-        <h4>Import &amp; Export</h4>
-        <p>Move memories between machines. JSON in, JSON out. Your data travels with you.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="faq">
   <div class="container">
     <div class="section-head">
       <div class="kicker">Questions</div>
-      <h2>Quick answers</h2>
+      <h2><span class="grad">Quick</span> answers</h2>
     </div>
     <div class="faq-list">
       <details>
@@ -628,42 +1052,66 @@
   <div class="container">
     <div class="section-head">
       <div class="kicker">Get it</div>
-      <h2>Download Samvid</h2>
-      <p>Free to download, ready to go. Pick your platform.</p>
+      <h2>Download <span class="grad">Samvid.</span></h2>
+      <p>Free. Open source. No account needed. Pick your platform and go.</p>
     </div>
+
     <div class="dl-grid">
-      <a href="https://github.com/anandnic/samvid-memory-studio/releases/latest" class="dl-card">
-        <div class="dl-platform">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5l7.4-1v7.1H3V5.5zm0 13l7.4 1v-7H3v6zm8.2 1.1L21 21v-8.4h-9.8v7.2zm0-15.3v7.2H21V3l-9.8 1.4z"/></svg>
+      <a href="https://github.com/anandnic/samvid-memory-studio/releases/latest" class="dl-card dl-card-win" data-platform="win">
+        <div class="dl-card-top">
+          <div class="dl-platform">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5l7.4-1v7.1H3V5.5zm0 13l7.4 1v-7H3v6zm8.2 1.1L21 21v-8.4h-9.8v7.2zm0-15.3v7.2H21V3l-9.8 1.4z"/></svg>
+          </div>
+          <div class="dl-body">
+            <div class="dl-name">Windows</div>
+            <div class="dl-meta">10+ · 64-bit · .exe</div>
+          </div>
         </div>
-        <div class="dl-info">
-          <strong>Windows</strong>
-          <span>Windows 10+ · 64-bit · .exe</span>
+        <div class="dl-tag">Latest release</div>
+        <div class="dl-btn">
+          Download
         </div>
-        <div class="dl-arrow">→</div>
       </a>
-      <a href="https://github.com/anandnic/samvid-memory-studio/releases/latest" class="dl-card">
-        <div class="dl-platform">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.5c0-2.4 2-3.6 2.1-3.6-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.6.9-.8 0-1.9-.9-3.1-.8-1.6 0-3.1.9-3.9 2.4-1.7 2.9-.4 7.2 1.2 9.5.8 1.1 1.7 2.4 3 2.4 1.2 0 1.7-.8 3.1-.8s1.8.8 3.1.8c1.3 0 2.1-1.1 2.9-2.3.9-1.3 1.3-2.6 1.3-2.7-.1 0-2.6-1-2.6-3.9zM15.2 5.4c.7-.8 1.1-1.9 1-3-1 0-2.1.6-2.8 1.4-.6.7-1.2 1.9-1 2.9 1.1.1 2.2-.5 2.8-1.3z"/></svg>
+
+      <a href="https://github.com/anandnic/samvid-memory-studio/releases/latest" class="dl-card dl-card-mac" data-platform="mac">
+        <div class="dl-card-top">
+          <div class="dl-platform">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.5c0-2.4 2-3.6 2.1-3.6-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.6.9-.8 0-1.9-.9-3.1-.8-1.6 0-3.1.9-3.9 2.4-1.7 2.9-.4 7.2 1.2 9.5.8 1.1 1.7 2.4 3 2.4 1.2 0 1.7-.8 3.1-.8s1.8.8 3.1.8c1.3 0 2.1-1.1 2.9-2.3.9-1.3 1.3-2.6 1.3-2.7-.1 0-2.6-1-2.6-3.9zM15.2 5.4c.7-.8 1.1-1.9 1-3-1 0-2.1.6-2.8 1.4-.6.7-1.2 1.9-1 2.9 1.1.1 2.2-.5 2.8-1.3z"/></svg>
+          </div>
+          <div class="dl-body">
+            <div class="dl-name">macOS</div>
+            <div class="dl-meta">11+ · Intel &amp; Apple Silicon</div>
+          </div>
         </div>
-        <div class="dl-info">
-          <strong>macOS</strong>
-          <span>macOS 11+ · Intel &amp; Apple Silicon</span>
+        <div class="dl-tag">Latest release</div>
+        <div class="dl-btn">
+          Download
         </div>
-        <div class="dl-arrow">→</div>
       </a>
-      <a href="https://github.com/anandnic/samvid-memory-studio/releases/latest" class="dl-card">
-        <div class="dl-platform">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.5 1.1c.3-.1.6-.1.9 0l8.9 4c.5.2.8.7.8 1.2v3.2c0 .5-.3.9-.8 1.2l-2.4 1-6.5 2.9c-.3.1-.6.1-.9 0l-8.9-4A1.3 1.3 0 012 9.5V6.3c0-.5.3-.9.8-1.2l9.7-4z"/></svg>
+
+      <a href="https://github.com/anandnic/samvid-memory-studio/releases/latest" class="dl-card dl-card-lin" data-platform="linux">
+        <div class="dl-card-top">
+          <div class="dl-platform">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.5 1.1c.3-.1.6-.1.9 0l8.9 4c.5.2.8.7.8 1.2v3.2c0 .5-.3.9-.8 1.2l-2.4 1-6.5 2.9c-.3.1-.6.1-.9 0l-8.9-4A1.3 1.3 0 012 9.5V6.3c0-.5.3-.9.8-1.2l9.7-4z"/></svg>
+          </div>
+          <div class="dl-body">
+            <div class="dl-name">Linux</div>
+            <div class="dl-meta">64-bit · .deb · .AppImage</div>
+          </div>
         </div>
-        <div class="dl-info">
-          <strong>Linux</strong>
-          <span>.deb · .AppImage · 64-bit</span>
+        <div class="dl-tag">Latest release</div>
+        <div class="dl-btn">
+          Download
         </div>
-        <div class="dl-arrow">→</div>
       </a>
     </div>
-    <p class="dl-foot">
+
+    <div class="dl-foot">
+      <span class="dl-foot-badge">MIT Licensed</span>
+      <span class="dl-foot-badge">Free forever</span>
+      <span class="dl-foot-badge">No telemetry</span>
+    </div>
+    <p class="dl-foot-link">
       Looking for older versions or source builds?
       <a href="https://github.com/anandnic/samvid-memory-studio/releases">See all releases →</a>
     </p>
@@ -702,6 +1150,65 @@
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
       var s; try { s = localStorage.getItem(KEY); } catch (_) {}
       if (!s || (s !== 'dark' && s !== 'light')) set(e.matches ? 'dark' : 'light');
+    });
+  })();
+
+  // mobile menu
+  (function () {
+    var btn = document.getElementById('mobileMenuBtn');
+    var nav = document.getElementById('mobileNav');
+    if (!btn || !nav) return;
+    btn.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      btn.classList.toggle('open', open);
+    });
+    nav.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        nav.classList.remove('open');
+        btn.classList.remove('open');
+      });
+    });
+  })();
+  // route download clicks to latest release asset by platform
+  (function () {
+    var API = 'https://api.github.com/repos/anandnic/samvid-memory-studio/releases/latest';
+    var PLATFORM_MAP = { win: '.exe', mac: '.dmg', linux: '.deb' };
+
+    document.querySelectorAll('.dl-card').forEach(function (card) {
+      card.addEventListener('click', function (e) {
+        var btn = card.querySelector('.dl-btn');
+        var origText = btn.textContent;
+        var platform = card.dataset.platform;
+        if (!platform) return; // let footer links work normally
+
+        e.preventDefault();
+        btn.textContent = 'Preparing…';
+
+        fetch(API)
+          .then(function (r) {
+            if (!r.ok) throw new Error('API failed');
+            return r.json();
+          })
+          .then(function (release) {
+            var assets = release.assets || [];
+            var target = PLATFORM_MAP[platform];
+            var asset = assets.find(function (a) {
+              return a.name.toLowerCase().indexOf(target) !== -1;
+            });
+            // Linux fallback: .AppImage if .deb not found
+            if (!asset && platform === 'linux') {
+              asset = assets.find(function (a) {
+                return a.name.toLowerCase().indexOf('.appimage') !== -1;
+              });
+            }
+            window.location.href = asset ? asset.browser_download_url : card.href;
+            setTimeout(function () { btn.textContent = origText; }, 600);
+          })
+          .catch(function () {
+            window.location.href = card.href;
+            btn.textContent = origText;
+          });
+      });
     });
   })();
 </script>

@@ -67,8 +67,8 @@
     </h1>
     <p class="hero-sub">
       <span class="hero-sub-lead">AI without memory is a river that forgets its source.</span>
-      <span class="hero-sub-body">Samvid lets every experience leave an imprint. Memories gather. Connections deepens. Meaning unfolds. Beneath the surface, semantic recall acts like a subconscious mind, bringing the right context at the right moment.</span>
-      <span class="hero-sub-close">What begins as conversation becomes understanding.<br>What begins as data becomes memory.</span>
+      <span class="hero-sub-body">Samvid captures the imprint of every experience. Memories gather. Connections deepens. Meaning emerges. Designed to function like a conscious mind, it brings the right context at the right moment.</span>
+     
     </p>
     <div class="hero-cta">
       <a href="#download" class="btn btn-primary">
@@ -78,7 +78,14 @@
       <a href="user-manual.pdf" class="btn btn-ghost">Documentation</a>
     </div>
 
-    <div class="hero-shot">
+    <div class="hero-shot" id="heroShot">
+      <button class="hero-play-btn" id="demoTrigger" aria-label="Watch demo video">
+        <svg class="play-circle" viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="22" fill="rgba(0,0,0,.55)" stroke="rgba(255,255,255,.9)" stroke-width="1.5"/>
+          <path d="M20 16l12 8-12 8z" fill="rgba(255,255,255,.95)"/>
+        </svg>
+        <span class="hero-play-label">Watch demo</span>
+      </button>
       <div class="app-window">
         <div class="titlebar">
           <span class="t-dot"></span>
@@ -331,7 +338,7 @@
         </div>
         <div class="am-body">
           <div class="am-line"><span class="am-role">you</span><span class="am-msg">What database are we using for the payments service?</span></div>
-          <div class="am-line"><span class="am-role">ai</span><span class="am-msg am-kept-text">Postgres — decided March 14th. You ruled out SQLite for write contention reasons. Migration scripts are in <code>/db/migrations</code>.</span></div>
+          <div class="am-line"><span class="am-role">ai</span><span class="am-msg am-kept-text">Postgres — decided on 14th March . You ruled out SQLite for write contention reasons. Migration scripts are in <code>/db/migrations</code>.</span></div>
         </div>
       </div>
     </div>
@@ -366,15 +373,7 @@
         <div class="brain-core-name">Samvid Memory Studio</div>
         <div class="brain-core-sub">Semantic · Vector · Embeddings · Real-time</div>
       </div>
-      <div class="brain-db">
-        <div class="brain-db-icn">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v6c0 1.7 4 3 9 3s9-1.3 9-3V5M3 11v6c0 1.7 4 3 9 3s9-1.3 9-3v-6"/></svg>
-        </div>
-        <div>
-          <div class="brain-db-name">samvid.db</div>
-          <div class="brain-db-sub">Memory on device · no sync, no conflicts</div>
-        </div>
-      </div>
+      
     </div>
   </div>
 </section>
@@ -463,7 +462,7 @@
     <div class="graph-card">
       <div class="graph-card-head">
         <div>
-          <div class="graph-card-title">project live graph</div>
+          <div class="graph-card-title">Knowledge visualization </div>
           <div class="graph-card-sub">6 memories · 5 associations</div>
         </div>
         <div class="graph-legend">
@@ -602,7 +601,7 @@
         <div class="d-node d-node-pin" style="right:14px;top:118px;">
           <div class="d-bubble d-bubble-green-95">0.95</div>
           <div class="d-age">8 months</div>
-          <div class="d-content">Core arch decision</div>
+          <div class="d-content">Core arch</div>
         </div>
       </div>
     </div>
@@ -631,12 +630,12 @@
         <div class="lc-card lc-card-consolidate">
           <div class="lc-op"><span class="lc-icn lc-icn-violet">↬</span><span>consolidate</span></div>
           <h3>Merge duplicates</h3>
-          <p>Finds near-duplicate memories via cosine distance and merges them. Dry-run first.</p>
+          <p>Finds near-duplicate memories and consolidates.</p>
         </div>
         <div class="lc-card lc-card-summarize">
           <div class="lc-op"><span class="lc-icn lc-icn-green">∑</span><span>summarize</span></div>
           <h3>Batch summarize</h3>
-          <p>Send raw memories through an LLM. Stored as a new summary; sources downgraded.</p>
+          <p>Send raw memories through an LLM and summarize the entire context.</p>
       </div>
     </div>
   </div>
@@ -732,8 +731,8 @@
   <div class="container">
     <div class="section-head">
       <div class="kicker">One store, three interfaces</div>
-      <h2>20 tools.<br>Three ways to <span class="grad">use them.</span></h2>
-      <p>Samvid speaks MCP for AI agents, ships a full CLI for scripts, and includes a polished desktop app for humans. One database. Three surfaces. Same memory everywhere.</p>
+      <h2>Three ways to <span class="grad">use tools.</span></h2>
+      <p>Samvid Memory Studio speaks MCP for AI agents, ships a full CLI for scripts, and includes a polished desktop app for humans. One database. Three surfaces. Same memory everywhere.</p>
     </div>
 
     <div class="if-illustration">
@@ -772,42 +771,6 @@
           <li>System tray, always available</li>
           <li>Export and backup</li>
         </ul>
-      </div>
-    </div>
-
-    <div class="if-tools-label">All 20 MCP tools</div>
-    <div class="if-tools">
-      <div class="tool-group">
-        <div class="tool-group-label">Memory CRUD · 6 tools</div>
-        <div class="tool-pills">
-          <span class="tp">add_memory</span><span class="tp">add_memories</span><span class="tp">get_memory</span>
-          <span class="tp">update_memory</span><span class="tp">delete_memory</span><span class="tp">list_memories</span>
-        </div>
-      </div>
-      <div class="tool-group">
-        <div class="tool-group-label">Search &amp; context · 3 tools</div>
-        <div class="tool-pills">
-          <span class="tp">search_memories</span><span class="tp">hybrid_search</span><span class="tp">get_context</span>
-        </div>
-      </div>
-      <div class="tool-group">
-        <div class="tool-group-label">Associations · 2 tools</div>
-        <div class="tool-pills">
-          <span class="tp">create_association</span><span class="tp">get_associations</span>
-        </div>
-      </div>
-      <div class="tool-group">
-        <div class="tool-group-label">Lifecycle · 6 tools</div>
-        <div class="tool-pills">
-          <span class="tp">forget</span><span class="tp">compact</span><span class="tp">consolidate</span>
-          <span class="tp">prepare_summarization</span><span class="tp">store_summary</span><span class="tp">replay_session</span>
-        </div>
-      </div>
-      <div class="tool-group">
-        <div class="tool-group-label">Import · export · stats · 3 tools</div>
-        <div class="tool-pills">
-          <span class="tp">export_memories</span><span class="tp">import_memories</span><span class="tp">get_stats</span>
-        </div>
       </div>
     </div>
   </div>
@@ -850,7 +813,7 @@
       <div class="ic">
         <div class="ic-num">06</div>
         <h4>Export</h4>
-        <p>Move memories between machines. JSON in, JSON out. Your data travels with you.</p>
+        <p>Move memories between machines. Your data travels with you.</p>
       </div>
     </div>
   </div>
@@ -868,7 +831,7 @@
       <div class="feat-copy">
         <div class="feat-tag">Semantic search</div>
         <h3>Find things by <span class="grad">meaning,</span> not keywords.</h3>
-        <p>Ask <em>what was the bug from last Tuesday?</em> and Samvid Memory Studio finds it. The search understands intent, not just text matches.</p>
+        <p>Ask <em>what did I forget to ask?</em> and Samvid Memory Studio finds it. The search understands intent, not just text matches.</p>
         <ul class="bullets">
           <li>Vector + keyword hybrid ranking</li>
           <li>Auto-graded relevance scores</li>
@@ -879,15 +842,15 @@
         <div class="mock search-mock">
           <div class="search-bar">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-            <span class="s-text">what did we decide about the auth flow?</span>
+            <span class="s-text">what did I forget to ask?</span>
             <span class="s-mode">semantic</span>
           </div>
           <div class="search-meta">3 results · semantic</div>
           <div class="sr-card">
-            <p class="sr-content">Use JWT with refresh tokens stored in httpOnly cookies. Rotate keys every 30 days.</p>
+            <p class="sr-content">Ask Riya if she wants chai after class. Her exam ends at 4 pm .</p>
             <div class="sr-badges">
-              <span class="sr-badge sr-badge-green">Fact</span>
-              <span class="sr-badge sr-badge-gray">project</span>
+              <span class="sr-badge sr-badge-green">Reminder</span>
+              <span class="sr-badge sr-badge-gray">personal</span>
             </div>
             <div class="sr-bars">
               <div class="sr-bar">
@@ -903,10 +866,10 @@
             </div>
           </div>
           <div class="sr-card">
-            <p class="sr-content">Auth refactor session — Mar 14. Walked through tradeoffs, decided against session cookies for the public API.</p>
+            <p class="sr-content">Call Dad back about the doctor appointment. He asked if we can go together next Friday.</p>
             <div class="sr-badges">
-              <span class="sr-badge sr-badge-orange">Event</span>
-              <span class="sr-badge sr-badge-gray">project</span>
+              <span class="sr-badge sr-badge-orange">Promise</span>
+              <span class="sr-badge sr-badge-gray">family</span>
             </div>
             <div class="sr-bars">
               <div class="sr-bar">
@@ -922,10 +885,10 @@
             </div>
           </div>
           <div class="sr-card">
-            <p class="sr-content">Strong preference for short-lived access tokens, longer-lived refresh tokens.</p>
+            <p class="sr-content">Check the laptop charger before leaving — it's in the blue bag, not the office drawer.</p>
             <div class="sr-badges">
-              <span class="sr-badge sr-badge-blue">Preference</span>
-              <span class="sr-badge sr-badge-gray">project</span>
+              <span class="sr-badge sr-badge-blue">Note</span>
+              <span class="sr-badge sr-badge-gray">daily</span>
             </div>
             <div class="sr-bars">
               <div class="sr-bar">
@@ -948,7 +911,7 @@
       <div class="feat-copy">
         <div class="feat-tag">Lives on your machine</div>
         <h3>Your data. Your device. <span class="grad">Your call.</span></h3>
-        <p>Everything lives on your machine. No cloud. No account. No one watching. It works quietly in the background — your data belongs to you.</p>
+        <p>Everything lives on your machine. No cloud. No account. No one watching. Your data belongs to you.</p>
         <ul class="bullets">
           <li>On device local memory</li>
           <li>Survives app updates and uninstalls</li>
@@ -1013,7 +976,10 @@
       </details>
       <details>
         <summary>How do I connect my AI to Samvid?</summary>
-        <p>Add this snippet to your AI tool's MCP config. Every compatible tool connects the same way,  set it once and it works everywhere.</p>
+        <p>Add this snippet to your AI tool's MCP config. Every compatible tool connects the same way — set it once and it works everywhere.</p>
+        <p>For <strong>Claude Code</strong> (CLI), run:</p>
+        <pre><code>claude mcp add --transport http samvid http://127.0.0.1:8258/mcp</code></pre>
+        <p>For all other MCP clients, add to your config:</p>
         <pre><code>{
   "mcpServers": {
     "samvid": {
@@ -1192,6 +1158,57 @@
             btn.textContent = origText;
           });
       });
+    });
+  })();
+</script>
+
+<div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Demo video">
+  <div class="video-modal-overlay" id="modalOverlay"></div>
+  <div class="video-modal-content">
+    <button class="video-modal-close" id="modalClose" aria-label="Close video">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="video-modal-embed">
+      <iframe
+        id="youtubePlayer"
+        src=""
+        title="Demo video"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var trigger = document.getElementById('demoTrigger');
+    var shot = document.getElementById('heroShot');
+    var modal = document.getElementById('videoModal');
+    var overlay = document.getElementById('modalOverlay');
+    var closeBtn = document.getElementById('modalClose');
+    var player = document.getElementById('youtubePlayer');
+    var videoUrl = 'https://www.youtube.com/embed/irYBCx0C1UE?autoplay=1&rel=0&modestbranding=1&playsinline=1';
+
+    function openModal(e) {
+      e.preventDefault();
+      player.src = videoUrl;
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.remove('active');
+      player.src = '';
+      document.body.style.overflow = '';
+    }
+
+    trigger.addEventListener('click', openModal);
+    overlay.addEventListener('click', closeModal);
+    closeBtn.addEventListener('click', closeModal);
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeModal();
     });
   })();
 </script>
